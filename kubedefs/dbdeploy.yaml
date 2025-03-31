@@ -31,7 +31,7 @@ spec:
               key: db-pass
       volumes:
         - name: vpro-db-data
-          PersistentVolumeClaim:
+          persistentVolumeClaim:
             claimName: db-pv-claim
           
       initContainers:
